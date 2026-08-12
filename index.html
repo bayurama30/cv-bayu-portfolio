@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Bayu Ramadhan — Data & Business Intelligence Analyst (Telkom Group, SQL, Looker Studio, Google Apps Script) and Network & AI Infrastructure Engineer (MikroTik, ISP founder, AI chatbots & agent orchestration)." />
+<meta name="keywords" content="Bayu Ramadhan, Data Analyst, Business Intelligence, Telkom, Looker Studio, SQL, Google Apps Script, MikroTik, Network Engineer, AI Infrastructure, ISP, Chatbot" />
+<meta name="author" content="Bayu Ramadhan" />
+<meta property="og:title" content="Bayu Ramadhan — Data & BI Analyst | Network & AI Infrastructure Engineer" />
+<meta property="og:description" content="Data & BI Analyst with 3+ years at Telkom Group and Network & AI Infrastructure Engineer — SQL, Looker Studio, Apps Script, MikroTik, AI chatbots & agent orchestration." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bayuramadhan.space.z.ai" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Bayu Ramadhan — Data & BI Analyst | Network & AI Infrastructure Engineer" />
+<meta name="twitter:description" content="Data & BI Analyst (Telkom Group) & Network & AI Infrastructure Engineer — SQL, Looker Studio, MikroTik, AI chatbots." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237c3aed'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>B</text></svg>" />
+<title>Bayu Ramadhan — Data & Business Intelligence Analyst | Network & AI Infrastructure Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/inter@latest/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/jetbrains-mono@latest/index.css">
+<style>
+  :root{
+    --bg:#0a0a0f;
+    --bg-2:#111118;
+    --accent:#7c3aed;
+    --accent-2:#22d3ee;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+  }
+  *{scroll-behavior:smooth}
+  html,body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif}
+  .font-mono{font-family:'JetBrains Mono',monospace}
+  .grad-text{
+    background:linear-gradient(90deg,#a78bfa 0%,#22d3ee 50%,#f472b6 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    background-size:200% auto;animation:shine 6s linear infinite;
+  }
+  @keyframes shine{to{background-position:200% center}}
+  .grid-bg{
+    background-image:
+      linear-gradient(rgba(124,58,237,.08) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(124,58,237,.08) 1px,transparent 1px);
+    background-size:48px 48px;
+    mask-image:radial-gradient(ellipse at center,#000 30%,transparent 70%);
+  }
+  .blob{
+    position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;pointer-events:none;
+    animation:float 14s ease-in-out infinite;
+  }
+  @keyframes float{
+    0%,100%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(30px,-40px) scale(1.1)}
+  }
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  .card{
+    background:linear-gradient(145deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    transition:all .4s cubic-bezier(.4,0,.2,1);
+  }
+  .card:hover{
+    border-color:rgba(124,58,237,.4);
+    transform:translateY(-4px);
+    box-shadow:0 20px 40px -20px rgba(124,58,237,.3);
+  }
+  .nav-link{position:relative}
+  .nav-link::after{
+    content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;
+    background:linear-gradient(90deg,#7c3aed,#22d3ee);
+    transition:width .3s ease;
+  }
+  .nav-link:hover::after,.nav-link.active::after{width:100%}
+  .timeline-dot{
+    width:14px;height:14px;border-radius:50%;
+    background:linear-gradient(135deg,#7c3aed,#22d3ee);
+    box-shadow:0 0 0 4px rgba(124,58,237,.2);
+  }
+  .skill-tag{
+    transition:all .3s ease;
+  }
+  .skill-tag:hover{
+    transform:translateY(-2px);
+    background:rgba(124,58,237,.25);
+    border-color:rgba(124,58,237,.6);
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,#7c3aed,#6d28d9);
+    transition:all .3s ease;
+    position:relative;overflow:hidden;
+  }
+  .btn-primary::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(135deg,#22d3ee,#7c3aed);
+    opacity:0;transition:opacity .3s ease;
+  }
+  .btn-primary:hover::before{opacity:1}
+  .btn-primary span{position:relative;z-index:1}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(124,58,237,.6)}
+  .cursor-dot{
+    position:fixed;width:8px;height:8px;border-radius:50%;
+    background:#22d3ee;pointer-events:none;z-index:9999;
+    transition:transform .1s ease;mix-blend-mode:difference;
+  }
+  .project-img{transition:transform .6s ease}
+  .project-card:hover .project-img{transform:scale(1.08)}
+  ::-webkit-scrollbar{width:8px}
+  ::-webkit-scrollbar-track{background:#0a0a0f}
+  ::-webkit-scrollbar-thumb{background:linear-gradient(#7c3aed,#22d3ee);border-radius:4px}
+  .typing::after{
+    content:'|';animation:blink 1s infinite;color:#22d3ee;
+  }
+  @keyframes blink{50%{opacity:0}}
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<div class="cursor-dot" id="cursor"></div>
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-[#0a0a0f]/70 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-2 font-bold text-lg">
+      <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center font-mono">B</span>
+      <span class="grad-text">Bayu.dev</span>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary px-5 py-2 rounded-full text-sm font-medium text-white">
+      <span>Hire Me</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <div class="absolute inset-0 grid-bg"></div>
+  <div class="blob bg-purple-600 w-96 h-96" style="top:10%;left:10%"></div>
+  <div class="blob bg-cyan-500 w-80 h-80" style="bottom:15%;right:15%;animation-delay:-5s"></div>
+  <div class="blob bg-pink-500 w-72 h-72" style="top:50%;right:40%;animation-delay:-9s"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-cyan-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        Data & BI Analyst · Network & AI Infrastructure Engineer
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4">
+        Hi, I'm <span class="grad-text">Bayu Ramadhan</span>
+      </h1>
+      <h2 class="text-xl md:text-2xl text-gray-400 mb-6 font-mono">
+        &gt; <span class="typing" id="typed">Data & Business Intelligence Analyst</span>
+      </h2>
+      <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-xl">
+        <span class="text-purple-400 font-semibold">Data &amp; Business Intelligence Analyst</span> with 3+ years of experience at <span class="text-purple-400 font-semibold">Telkom Group</span> (SQL, Looker Studio, Apps Script) and <span class="text-cyan-300 font-semibold">Network &amp; AI Infrastructure Engineer</span> — ISP founder (MikroTik, PPPoE, FTTH) building AI chatbots (Telegram/WhatsApp), 24/7 automated monitoring, and multi-profile AI agent orchestration with provider failover &amp; plugin hooks.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="btn-primary px-7 py-3 rounded-full font-medium text-white">
+          <span>View My Work →</span>
+        </a>
+        <a href="#contact" class="px-7 py-3 rounded-full font-medium border border-white/20 hover:bg-white/5 transition">
+          Get in Touch
+        </a>
+      </div>
+      <div class="flex gap-4 mt-10 text-gray-400">
+        <a href="https://linkedin.com/in/bayurama30" target="_blank" class="hover:text-white transition"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        <a href="https://bayuramadhan.space.z.ai" target="_blank" class="hover:text-white transition"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.927 8.2c-.442-.113-3.528-.106-6.822 2.305-.67-.126-1.377-.19-2.1-.19-2.795 0-5.064 1.72-5.064 3.84 0 .463.12.893.333 1.284-.59 1.858-1.238 3.025-1.8 3.58-.172.172-.36.258-.543.265-.587 0-1.413-1.85-1.642-3.76-.501.726-.678 1.566-.678 2.487 0 2.12 1.87 3.84 4.176 3.84.475 0 .94-.072 1.37-.208-.293 2.205-1.055 3.05-.76 3.974.03.093.073.183.12.273-.5.66-1.08 1.224-1.74 1.664 1.14.143 2.32.04 3.24-.43.93.41 1.92.62 2.91.62 5.072 0 9.18-4.11 9.18-9.18 0-.53-.046-1.05-.13-1.558.315-.48.59-1.01.82-1.582-.3.167-.62.32-.96.47.36-.197.7-.41 1.01-.64-.14.42-.31.83-.5 1.21.19-.58.36-1.18.49-1.8.06-.35.1-.7.12-1.06-.2.13-.42.25-.64.37z"/></svg></a>
+        <a href="mailto:bayuramadhan30@gmail.com" class="hover:text-white transition"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.805l10 8.104 10-8.104v11.805h-20z"/></svg></a>
+      </div>
+    </div>
+    <div class="relative reveal" style="transition-delay:.2s">
+      <div class="relative w-full aspect-square max-w-md mx-auto">
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-400 opacity-70 blur-2xl"></div>
+        <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+          <!-- REPLACE with your actual photo -->
+          <img src="https://image.qwenlm.ai/public_source/7b43c837-28c1-406e-95a0-015fb5104644/101158016-44a1-436a-a66b-401503a61a45.png" alt="Bayu Ramadhan" class="w-full h-full object-cover"/>
+        </div>
+        <div class="absolute -bottom-4 -right-4 card rounded-2xl px-5 py-3 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center">📊</div>
+          <div>
+            <div class="text-xs text-gray-400">Currently working on</div>
+            <div class="text-sm font-semibold">B2B Process Intelligence</div>
+          </div>
+        </div>
+        <div class="absolute -top-4 -left-4 card rounded-2xl px-4 py-3 font-mono text-xs">
+          <div class="text-cyan-300">const customers = 131;</div>
+          <div class="text-pink-300">const orders = 200+;</div>
+          <div class="text-purple-300 mt-1">const toefl = 593;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-500 text-sm flex flex-col items-center gap-2">
+    <span>Scroll to explore</span>
+    <div class="w-px h-12 bg-gradient-to-b from-gray-500 to-transparent animate-pulse"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14">
+      <div class="text-sm font-mono text-purple-400 mb-2">// 01. ABOUT ME</div>
+      <h2 class="text-4xl md:text-5xl font-bold">Get to know me</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="reveal card rounded-2xl p-8 md:col-span-2">
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          I'm a <span class="text-purple-400 font-semibold">Data &amp; Business Intelligence Analyst</span> with <span class="text-cyan-300 font-semibold">3+ years of experience at Telkom Group</span>, focused on turning complex operational data (AO, SO, DO, MO, RO) into actionable business insights.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          Proven in <span class="text-purple-400">KPI monitoring, revenue assurance, and process automation</span> using SQL, Looker Studio, and Google Apps Script — cutting manual reporting effort by ~60% and accelerating Billing Complete by 25%. I'm also a <span class="text-cyan-300">local ISP founder</span> with end-to-end network operations and customer analytics experience.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          As a <span class="text-purple-400 font-semibold">Network &amp; AI Infrastructure Engineer</span>, I operate MikroTik infrastructure (64+ PPPoE users, 200 Mbps, dual-site), connected via Cloudflare Tunnel &amp; Tailscale, and build multi-profile AI agent orchestration (Hermes) — Telegram &amp; WhatsApp bots with knowledge bases, Google Sheets integration, rate limiting, and deterministic plugin hooks.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Outside of work, I enjoy automation, designing knowledge bases, and connecting data, networks, and AI to support data-driven decisions.
+        </p>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-6" style="transition-delay:.2s">
+        <div class="card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-bold grad-text">3+</div>
+          <div class="text-sm text-gray-400 mt-1">Years Experience</div>
+        </div>
+        <div class="card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-bold grad-text">131</div>
+          <div class="text-sm text-gray-400 mt-1">ISP Customers</div>
+        </div>
+        <div class="card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-bold grad-text">200+</div>
+          <div class="text-sm text-gray-400 mt-1">Orders Monitored</div>
+        </div>
+        <div class="card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-bold grad-text">25%</div>
+          <div class="text-sm text-gray-400 mt-1">BC Cycle Faster</div>
+        </div>
+        <div class="card rounded-2xl p-6 col-span-2">
+          <div class="text-sm text-gray-400 mb-2">Languages</div>
+          <div class="flex justify-center gap-3 text-sm">
+            <span class="skill-tag px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">🇮🇩 Indonesian — Native</span>
+            <span class="skill-tag px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">🇬🇧 English — Professional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="relative py-28 px-6 bg-gradient-to-b from-transparent via-purple-950/10 to-transparent">
+  <div class="max-w-5xl mx-auto">
+    <div class="reveal mb-14">
+      <div class="text-sm font-mono text-purple-400 mb-2">// 02. EDUCATION & CERTIFICATION</div>
+      <h2 class="text-4xl md:text-5xl font-bold">Academic Background</h2>
+    </div>
+
+    <div class="relative">
+      <div class="absolute left-[7px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500 via-cyan-400 to-transparent"></div>
+
+      <div class="space-y-12">
+        <div class="reveal relative md:grid md:grid-cols-2 md:gap-10">
+          <div class="md:text-right md:pr-10">
+            <div class="card rounded-2xl p-6 inline-block text-left">
+              <div class="text-xs font-mono text-cyan-300 mb-2">2017 — 2022</div>
+              <h3 class="text-xl font-bold mb-1">Bachelor of Computer Engineering</h3>
+              <div class="text-purple-300 font-medium mb-3">STMIK Indonesia Mandiri, Bandung</div>
+              <p class="text-gray-400 text-sm">Bachelor of Computer Engineering. GPA 3.57 / 4.00. Focus on programming, databases, and information systems fundamentals.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="text-xs px-2 py-1 rounded-md bg-white/5 border border-white/10">Informatics</span>
+                <span class="text-xs px-2 py-1 rounded-md bg-white/5 border border-white/10">Database</span>
+                <span class="text-xs px-2 py-1 rounded-md bg-white/5 border border-white/10">GPA 3.57</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-6"><div class="timeline-dot"></div></div>
+        </div>
+
+        <div class="reveal relative md:grid md:grid-cols-2 md:gap-10">
+          <div class="md:col-start-2 md:pl-10">
+            <div class="card rounded-2xl p-6">
+              <div class="text-xs font-mono text-cyan-300 mb-2">Certifications</div>
+              <h3 class="text-xl font-bold mb-1">Data & Technical Certifications</h3>
+              <ul class="text-gray-400 text-sm space-y-2 mt-2">
+                <li>▹ Fundamental Data Analysis using Power BI — Alison (CPD Certified, Expected Mar 2026)</li>
+                <li>▹ English Proficiency Test Prediction of TOEFL (Score: 593) — Universal English (Expected Aug 2025)</li>
+                <li>▹ IT Technical Support Fundamentals — Google via Coursera (Sep 2023)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-6"><div class="timeline-dot"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="relative py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14">
+      <div class="text-sm font-mono text-purple-400 mb-2">// 03. SKILLS</div>
+      <h2 class="text-4xl md:text-5xl font-bold">Core Skills</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal card rounded-2xl p-7">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-xl">📊</div>
+          <h3 class="text-lg font-bold">Data Analysis & BI</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">SQL (Oracle)</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">MySQL</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Google Sheets</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Excel</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Looker Studio</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Power BI</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.1s">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-green-500 to-emerald-400 flex items-center justify-center text-xl">📈</div>
+          <h3 class="text-lg font-bold">Business Process</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">B2B Lifecycle AO–RO</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">LOP/LOB</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Revenue Assurance</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">BASO</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">KPI Tracking</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Contract Analysis</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.2s">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center text-xl">⚡</div>
+          <h3 class="text-lg font-bold">Automation & Tools</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Google Apps Script</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Telegram Bot</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Automated Reporting</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Workflow Opt.</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Dashboard Design</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-500 to-red-400 flex items-center justify-center text-xl">🌐</div>
+          <h3 class="text-lg font-bold">Networking & ISP</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">MikroTik</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">PPPoE</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">FTTH</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Network Design</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Troubleshooting</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.1s">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-400 flex items-center justify-center text-xl">☎️</div>
+          <h3 class="text-lg font-bold">Telecom Domain</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Telecom Ops</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Enterprise Accounts</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Service Monitoring</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Operational Data</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Astinet / Wi-Fi</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.2s">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-400 flex items-center justify-center text-xl">🤝</div>
+          <h3 class="text-lg font-bold">Soft Skills</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Stakeholder Coord.</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Problem Solving</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Training & Sharing</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Cross-functional</span>
+        </div>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-fuchsia-500 to-purple-400 flex items-center justify-center text-xl">🤖</div>
+          <h3 class="text-lg font-bold">AI / LLM Agents</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Hermes Agent</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Multi-profile</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Chatbot</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Knowledge Base</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">LLM APIs</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Provider Router</span>
+          <span class="skill-tag text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Plugin Hook</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="relative py-28 px-6 bg-gradient-to-b from-transparent via-cyan-950/10 to-transparent">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14 flex items-end justify-between flex-wrap gap-4">
+      <div>
+        <div class="text-sm font-mono text-purple-400 mb-2">// 04. PROJECTS</div>
+        <h2 class="text-4xl md:text-5xl font-bold">Key Projects</h2>
+      </div>
+      <a href="#contact" class="text-sm text-purple-400 hover:text-purple-300 transition">Let's collaborate →</a>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal project-card card rounded-2xl overflow-hidden">
+        <div class="aspect-video overflow-hidden">
+          <!-- REPLACE project screenshot -->
+          <img src="https://image.qwenlm.ai/public_source/7b43c837-28c1-406e-95a0-015fb5104644/14daa34e6-8ee9-43e8-a3a5-2c3b84cd9805.png" class="project-img w-full h-full object-cover" alt=""/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-mono text-cyan-300">2024</span>
+            <span class="text-xs px-2 py-1 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20">BI</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2">B2B Process Intelligence Dashboard</h3>
+          <p class="text-gray-400 text-sm mb-4">Looker Studio + Google Sheets + Oracle SQL. End-to-end monitoring of AO, SO, DO, MO, RO lifecycle — order visibility up 70%, backlog down 35% (Q3 2024).</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs text-gray-500">Looker Studio</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">Oracle SQL</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">Apps Script</span>
+          </div>
+          <a href="#contact" class="text-sm text-purple-400 hover:text-purple-300 transition">View case study →</a>
+        </div>
+      </div>
+
+      <div class="reveal project-card card rounded-2xl overflow-hidden" style="transition-delay:.1s">
+        <div class="aspect-video overflow-hidden">
+          <!-- REPLACE project screenshot -->
+          <img src="https://image.qwenlm.ai/public_source/7b43c837-28c1-406e-95a0-015fb5104644/163e0d273-d763-4938-b45e-9022baa3224a.png" class="project-img w-full h-full object-cover" alt=""/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-mono text-cyan-300">2021</span>
+            <span class="text-xs px-2 py-1 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">EdTech</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Pijar Sekolah Analytics & Tracker</h3>
+          <p class="text-gray-400 text-sm mb-4">Web-based monitoring for training rollout across 65 schools in West Java — 90%+ adoption, engagement up 50% from data-driven content recommendations.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs text-gray-500">Web Monitoring</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">Analytics</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">Training</span>
+          </div>
+          <a href="#contact" class="text-sm text-purple-400 hover:text-purple-300 transition">View case study →</a>
+        </div>
+      </div>
+
+      <div class="reveal project-card card rounded-2xl overflow-hidden" style="transition-delay:.2s">
+        <div class="aspect-video overflow-hidden">
+          <!-- REPLACE project screenshot -->
+          <img src="https://image.qwenlm.ai/public_source/7b43c837-28c1-406e-95a0-015fb5104644/19c624559-1b74-4afb-8cf3-76cc5d90b1d0.png" class="project-img w-full h-full object-cover" alt=""/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-mono text-cyan-300">Ongoing</span>
+            <span class="text-xs px-2 py-1 rounded-md bg-pink-500/10 text-pink-300 border border-pink-500/20">ISP</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2">ISP Business Analytics</h3>
+          <p class="text-gray-400 text-sm mb-4">Self-built network & billing for 131 customers: churn prediction, ARPU tracking, capacity planning — downtime cut 20%, satisfaction up.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs text-gray-500">MikroTik</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">PPPoE</span>
+            <span class="text-gray-700">•</span>
+            <span class="text-xs text-gray-500">Analytics</span>
+          </div>
+          <a href="#contact" class="text-sm text-purple-400 hover:text-purple-300 transition">View case study →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="relative py-28 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="reveal mb-14">
+      <div class="text-sm font-mono text-purple-400 mb-2">// 05. EXPERIENCE</div>
+      <h2 class="text-4xl md:text-5xl font-bold">Professional Journey</h2>
+    </div>
+
+    <div class="space-y-6">
+      <div class="reveal card rounded-2xl p-7">
+        <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <h3 class="text-xl font-bold">Technical Support / Data Analyst</h3>
+            <div class="text-purple-300 font-medium">PT Telkom Indonesia (Telkom Group) — RLEGS REG 2</div>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 px-3 py-1 rounded-full bg-white/5 border border-white/10">Jul 2023 — Present</span>
+        </div>
+        <p class="text-gray-400 mb-4">Full-time, Bandung. B2B reporting automation, Looker Studio dashboards, revenue variance analysis, and cross-team coordination.</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Automated weekly B2B performance reports with Google Apps Script — cut manual effort ~60% and improved accuracy for 200+ active orders.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Built Looker Studio dashboards for AO–RO ageing — prioritized backlog and accelerated Billing Complete (BC) by 25% QoQ.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Revenue variance analysis with Oracle SQL supporting Revenue Assurance for BASO &gt;2 months.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Collaborated with Sales, Finance, and Operations to align KPIs and improve order-to-cash visibility.</li>
+        </ul>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.1s">
+        <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <h3 class="text-xl font-bold">Technical Support — BGES REG 3</h3>
+            <div class="text-purple-300 font-medium">PT Telkom Indonesia</div>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 px-3 py-1 rounded-full bg-white/5 border border-white/10">Dec 2021 — Jul 2023</span>
+        </div>
+        <p class="text-gray-400 mb-4">Full-time, Bandung. Connectivity and sales data analytics, automation bots, and regional performance dashboards.</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Analyzed connectivity & sales data (Astinet, Wi-Fi) for 50+ enterprise accounts — supported target evaluation and churn reduction.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Built a Telegram bot for daily alerts and performance summaries — critical issue response 40% faster.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Created Looker Studio dashboards for regional sales performance and service adoption trends.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Supported Revenue Assurance by flagging BASO &gt;2 months.</li>
+        </ul>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.2s">
+        <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <h3 class="text-xl font-bold">Special Team Pijar Sekolah — BGES REG 3</h3>
+            <div class="text-purple-300 font-medium">PT Telkom Indonesia</div>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 px-3 py-1 rounded-full bg-white/5 border border-white/10">Feb 2021 — Nov 2021</span>
+        </div>
+        <p class="text-gray-400 mb-4">Special assignment. Training & onboarding for the Pijar Sekolah e-learning platform across 65 schools in West Java.</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Delivered training & onboarding — 90%+ adoption rate post-intervention.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Built web-based monitoring for real-time training progress and engagement tracking.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Analyzed feedback & usage data — content recommendations increased engagement by 50%.</li>
+        </ul>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.25s">
+        <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <h3 class="text-xl font-bold">Founder & Network Operator — ISP</h3>
+            <div class="text-purple-300 font-medium">PT Ghadhe Akses Mandiri</div>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 px-3 py-1 rounded-full bg-white/5 border border-white/10">Ongoing</span>
+        </div>
+        <p class="text-gray-400 mb-4">Business owner. Built & managed a local ISP serving 131 residential and SME customers in Bandung.</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Designed end-to-end network architecture: PPPoE, MikroTik, FTTH.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Managed billing, customer onboarding, troubleshooting, and technical support.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Implemented automated monitoring and alerting systems for network performance.</li>
+        </ul>
+      </div>
+
+      <div class="reveal card rounded-2xl p-7" style="transition-delay:.3s">
+        <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <h3 class="text-xl font-bold">Network & AI Infrastructure Engineer</h3>
+            <div class="text-purple-300 font-medium">AI Agent Orchestration & Network Automation</div>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 px-3 py-1 rounded-full bg-white/5 border border-white/10">2026 — Present</span>
+        </div>
+        <p class="text-gray-400 mb-4">Designed & operated network infrastructure plus multi-profile AI agent orchestration (Hermes) on a 24/7 Fedora server — Telegram & WhatsApp service bots with knowledge bases, rate limiting, and automated reporting.</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Multi-profile AI bots (default, bila, wa-bulog, grace) with persistent memory via Obsidian + provider failover (MiMo, DeepSeek, DeepInfra).</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>WhatsApp CS bot: multi-file knowledge base, 3-tier users (admin/field officer/general), officer reports → Google Sheets automation.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>MikroTik monitoring & automation: bandwidth, FUP, scheduled PPPoE restart, daily backup, Telegram/WhatsApp alerts.</li>
+          <li class="flex gap-2"><span class="text-purple-400">▹</span>Remote infrastructure: Cloudflare Tunnel, Tailscale, systemd services, cron scheduling, 24/7 auto-restart.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-28 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="reveal">
+      <div class="text-sm font-mono text-purple-400 mb-2">// 06. CONTACT</div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">
+        Let's <span class="grad-text">build something</span> together
+      </h2>
+      <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+        Open to job opportunities, data/BI and automation projects, or collaborations — let's talk about data-driven decisions &amp; technology.
+      </p>
+    </div>
+
+    <div class="reveal card rounded-3xl p-8 md:p-10 text-left">
+      <form class="space-y-5" onsubmit="event.preventDefault();handleSubmit(this)">
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="text-sm text-gray-400 mb-2 block">Your Name</label>
+            <input required type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition" placeholder="John Doe"/>
+          </div>
+          <div>
+            <label class="text-sm text-gray-400 mb-2 block">Email Address</label>
+            <input required type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition" placeholder="jane@example.com"/>
+          </div>
+        </div>
+        <div>
+          <label class="text-sm text-gray-400 mb-2 block">Subject</label>
+          <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition" placeholder="Let's work on..."/>
+        </div>
+        <div>
+          <label class="text-sm text-gray-400 mb-2 block">Message</label>
+          <textarea required rows="5" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary w-full py-4 rounded-xl font-semibold text-white">
+          <span id="btnText">Send Message →</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="reveal mt-10 flex justify-center gap-4 flex-wrap">
+      <a href="mailto:bayuramadhan30@gmail.com" class="card px-5 py-3 rounded-xl text-sm hover:text-purple-300 transition">✉️ bayuramadhan30@gmail.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Bandung+West+Java+Indonesia" target="_blank" class="card px-5 py-3 rounded-xl text-sm hover:text-purple-300 transition">📍 Bandung, West Java, Indonesia</a>
+      <a href="CV_Bayu_Ramadhan.pdf" download class="card px-5 py-3 rounded-xl text-sm hover:text-purple-300 transition">📄 Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 py-10 px-6">
+  <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 text-sm text-gray-500">
+    <div>© 2026 Bayu Ramadhan — Data & BI Analyst · Network & AI Infrastructure Engineer.</div>
+    <div class="font-mono text-xs">&lt;/&gt; Built with HTML, Tailwind & ☕</div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+  // Typing effect
+  const phrases = ['Data & Business Intelligence Analyst','Network & AI Infrastructure Engineer','B2B Telecom Analytics','Google Apps Script Automation'];
+  let pi=0, ci=0, del=false;
+  const typed = document.getElementById('typed');
+  function type(){
+    const word = phrases[pi];
+    typed.textContent = word.substring(0,ci);
+    if(!del){ ci++; if(ci>word.length){del=true; setTimeout(type,1800); return;} }
+    else { ci--; if(ci<0){del=false; pi=(pi+1)%phrases.length;} }
+    setTimeout(type, del?40:90);
+  }
+  type();
+
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove',e=>{
+    cursor.style.left = (e.clientX-4)+'px';
+    cursor.style.top = (e.clientY-4)+'px';
+  });
+  document.querySelectorAll('a,button,input,textarea').forEach(el=>{
+    el.addEventListener('mouseenter',()=>cursor.style.transform='scale(3)');
+    el.addEventListener('mouseleave',()=>cursor.style.transform='scale(1)');
+  });
+
+  // Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll',()=>{
+    const y = window.scrollY + 120;
+    sections.forEach(s=>{
+      if(y >= s.offsetTop && y < s.offsetTop + s.offsetHeight){
+        navLinks.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === '#'+s.id));
+      }
+    });
+  });
+
+  // Form submit — opens user's email client with the form content
+  function handleSubmit(form){
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const subject = form.querySelectorAll('input[type="text"]')[1] ? form.querySelectorAll('input[type="text"]')[1].value : 'Website inquiry';
+    const message = form.querySelector('textarea').value;
+    const mailto = 'mailto:bayuramadhan30@gmail.com'
+      + '?subject=' + encodeURIComponent(subject + ' — from ' + name)
+      + '&body=' + encodeURIComponent(message + '\n\n—\nFrom: ' + name + '\nEmail: ' + email);
+    window.location.href = mailto;
+    const btn = document.getElementById('btnText');
+    btn.textContent = '✓ Opening email...';
+    setTimeout(()=>{ btn.textContent = 'Send Message →'; }, 3000);
+  }
+</script>
+</body>
+</html>
