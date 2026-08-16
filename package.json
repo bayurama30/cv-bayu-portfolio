@@ -1,0 +1,9 @@
+{
+  "name": "cv-bayu-portfolio",
+  "version": "1.0.0",
+  "description": "Bayu Ramadhan - Data & Business Intelligence Analyst Portfolio",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve -s . -l 3000"
+  }
+}
